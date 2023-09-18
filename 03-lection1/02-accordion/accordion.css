@@ -1,1 +1,12 @@
-/* Стилизация аккордеона */
+@import './__item/__item.css';
+@import './__details/__details.css';
+@import './__summary/__summary.css';
+
+.accordion {
+  width: 730px;
+  flex-shrink: 0;
+}
+
+.accordion > .accordion__item:not(:last-child) {
+  margin-bottom: 8px;
+}

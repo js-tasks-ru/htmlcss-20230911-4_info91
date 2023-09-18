@@ -1,0 +1,9 @@
+.button_type_secondary {
+  color: var(--white);
+  background: var(--secondary);
+  border-width: 0px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_type_secondary:hover {
+  background: var(--secondaryHover);
+}

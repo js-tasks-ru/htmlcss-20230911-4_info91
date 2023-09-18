@@ -1,1 +1,21 @@
 /* Стилизация кнопки */
+@import './_disabled/button_disabled.css';
+@import './_type/button_type_alternate.css';
+@import './_type/button_type_primary.css';
+@import './_type/button_type_secondary.css';
+
+.button {
+  display: inline-block;
+  width: 182px;
+  height: 48px;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

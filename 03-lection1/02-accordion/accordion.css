@@ -1,7 +1,4 @@
-@import './__item/__item.css';
-@import './__details/__details.css';
-@import './__summary/__summary.css';
-
+/* ACCORDION */
 .accordion {
   width: 730px;
   flex-shrink: 0;
@@ -9,4 +6,35 @@
 
 .accordion > .accordion__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+/* DETAILS */
+.accordion__details {
+  color: var(--grey-4);
+
+  /* p */
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin: 0px;
+}
+
+/* ITEM */
+.accordion__item {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+/* SUMMARY */
+.accordion__summary {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+
+  margin: -8px 0 16px;
 }

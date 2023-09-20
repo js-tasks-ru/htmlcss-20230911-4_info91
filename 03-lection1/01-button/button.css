@@ -16,6 +16,8 @@
   line-height: normal;
 
   padding: 15px 15px 14px 15px;
+
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 /* PRIMARY */
@@ -23,7 +25,6 @@
   color: var(--white);
   background: var(--primary);
   border-width: 0px;
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_primary:hover {
@@ -35,7 +36,6 @@
   color: var(--white);
   background: var(--secondary);
   border-width: 0px;
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_secondary:hover {
   background: var(--secondaryHover);
@@ -47,7 +47,6 @@
   background: var(--white);
   border-color: var(--grey-3);
   border-width: 1px;
-  transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
 }
 .button_alternate:hover {
   border-color: var(--alternateHover);
@@ -55,7 +54,7 @@
 
 /* DISABLED */
 
-.button_disabled {
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }

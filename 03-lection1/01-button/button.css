@@ -1,12 +1,8 @@
 /* Стилизация кнопки */
-@import './_disabled/button_disabled.css';
-@import './_type/button_type_alternate.css';
-@import './_type/button_type_primary.css';
-@import './_type/button_type_secondary.css';
 
+/* BUTTON */
 .button {
   display: inline-block;
-  width: 182px;
   height: 48px;
 
   border-radius: 8px;
@@ -18,4 +14,49 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  padding-top: 15px;
+  padding-bottom: 14px;
+}
+
+/* PRIMARY */
+.button_primary {
+  color: var(--white);
+  background: var(--primary);
+  border-width: 0px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_primary:hover {
+  background: var(--primaryHover);
+}
+
+/* SECONDARY */
+.button_secondary {
+  color: var(--white);
+  background: var(--secondary);
+  border-width: 0px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_secondary:hover {
+  background: var(--secondaryHover);
+}
+
+/* ALTERNATE */
+.button_alternate {
+  color: var(--grey-4);
+  background: var(--white);
+  border-color: var(--grey-3);
+  border-width: 1px;
+  transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+.button_alternate:hover {
+  border-color: var(--alternateHover);
+}
+
+/* DISABLED */
+
+.button_disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }

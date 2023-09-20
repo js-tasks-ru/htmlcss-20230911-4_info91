@@ -1,6 +1,5 @@
 /* ACCORDION */
 .accordion {
-  width: 730px;
   flex-shrink: 0;
 }
 

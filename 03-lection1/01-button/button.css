@@ -45,8 +45,7 @@
 .button_alternate {
   color: var(--grey-4);
   background: var(--white);
-  border-color: var(--grey-3);
-  border-width: 1px;
+  border: 1px solid var(--grey-3);
 }
 .button_alternate:hover {
   border-color: var(--alternateHover);

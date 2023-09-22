@@ -1,17 +1,14 @@
 /* ACCORDION */
-.accordion {
-  flex-shrink: 0;
-}
-
-.accordion > .accordion__item:not(:last-child) {
-  margin-bottom: 8px;
-}
 
 /* ITEM */
 .accordion__item {
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 24px 32px 24px 32px;
+}
+
+.accordion__item + .accordion__item {
+  margin-top: 8px;
 }
 
 /* SUMMARY */

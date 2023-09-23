@@ -1,5 +1,5 @@
 .header h1 {
-  color: var(--black, #212429);
+  color: var(--black);
   font-family: Inter;
   font-size: 50px;
   font-style: normal;

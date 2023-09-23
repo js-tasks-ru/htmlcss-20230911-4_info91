@@ -18,7 +18,7 @@
 
 .footer__p {
   max-width: 640px;
-  color: var(--black, #212429);
+  color: var(--black);
   text-align: center;
   font-family: Inter;
   font-size: 16px;

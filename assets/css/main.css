@@ -29,6 +29,10 @@
   --primaryHover: #2342c0;
   --secondaryHover: #5028c6;
   --alternateHover: var(--black);
+
+  --mainBackground: #f9fafc;
+
+  --cardBoxShadow: rgba(33, 36, 41, 0.05);
 }
 
 body {

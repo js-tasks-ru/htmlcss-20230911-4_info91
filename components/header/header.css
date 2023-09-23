@@ -1,3 +1,22 @@
-.header__container {
-  width: 1110px;
+.header h1 {
+  color: var(--black, #212429);
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header__topMenu * {
+  display: inline-block;
+}
+
+.header__nav li {
+  display: inline-block;
+}
+.header__nav ul {
+  padding-left: 0;
 }

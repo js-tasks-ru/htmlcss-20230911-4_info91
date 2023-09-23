@@ -1,7 +1,28 @@
 .footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 72px;
+  padding-bottom: 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .footer__header {
-  font-size: 2rem;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0;
+}
+
+.footer__p {
+  max-width: 640px;
+  color: var(--black, #212429);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }

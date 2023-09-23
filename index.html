@@ -5,49 +5,57 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__top">
-          <img src="#" alt="logo" class="header__logo" />
-          <div class="header__topMenu">
-            <nav class="header__topNav">
-              <ul>
-                <li>Link1</li>
-                <li>Link2</li>
-                <li>Link3</li>
-              </ul>
-            </nav>
-            <button class="header__topToggleButton">ThemeToggle</button>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div>
+              <img src="#" alt="logo" class="header__logo" />
+            </div>
+            <div class="header__topMenu">
+              <nav class="header__topNav">
+                <ul>
+                  <li>Link1</li>
+                  <li>Link2</li>
+                  <li>Link3</li>
+                </ul>
+              </nav>
+              <button class="header__topToggleButton">ThemeToggle</button>
+            </div>
+          </div>
+          <h1>Reusable component library</h1>
+          <nav class="header__nav">
+            <ul>
+              <li>Link1</li>
+              <li>Link2</li>
+              <li>Link3</li>
+              <li>Link4</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main page__main">
+        <div class="container">
+          <div class="preview">
+            <div class="preview__card">Card1</div>
+            <div class="preview__card">Card2</div>
+            <div class="preview__card">Card3</div>
+            <div class="preview__card">Card4</div>
+            <div class="preview__card">Card5</div>
+            <div class="preview__card">Card6</div>
+            <button class="button button_alternate">Load more</button>
           </div>
         </div>
-        <h1>Reusable component library</h1>
-        <nav class="header__nav">
-          <ul>
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-            <li>Link4</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <div id="main__card">Card1</div>
-      <div id="main__card">Card2</div>
-      <div id="main__card">Card3</div>
-      <div id="main__card">Card4</div>
-      <div id="main__card">Card5</div>
-      <div id="main__card">Card6</div>
-      <button class="main__button">Load more</button>
-    </main>
-    <footer class="footer">
-      <span class="footer__header">About</span>
-      <p>
-        This project is a collection of professionally designed, pre-built,
-        fully responsive HTML snippets you can drop into your projects. Get
-        started by checking out our free preview components, or browsing the PNG
-        previews in the categories you're most curious about.
-      </p>
-    </footer>
+      </main>
+      <footer class="footer">
+        <h2 class="footer__header">About</h2>
+        <p class="footer__p">
+          This project is a collection of professionally designed, pre-built,
+          fully responsive HTML snippets you can drop into your projects. Get
+          started by checking out our free preview components, or browsing the
+          PNG previews in the categories you're most curious about.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

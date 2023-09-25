@@ -1,4 +1,4 @@
-.header h1 {
+.header__title {
   color: var(--black);
   font-family: Inter;
   font-size: 50px;
@@ -10,13 +10,17 @@
   display: flex;
   justify-content: space-between;
 }
-.header__topMenu * {
+
+.header__topNav {
+  display: inline-block;
+}
+.header__topNavListItem {
   display: inline-block;
 }
 
-.header__nav li {
-  display: inline-block;
-}
-.header__nav ul {
+.header__navList {
   padding-left: 0;
+}
+.header__navListItem {
+  display: inline-block;
 }

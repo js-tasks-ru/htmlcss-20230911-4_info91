@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-.footer__p {
+.footer__text {
   max-width: 640px;
   color: var(--black);
   text-align: center;

@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.preview__item_caption {
+.preview__itemCaption {
   color: var(--black);
   text-align: center;
   font-family: Roboto;
@@ -38,7 +38,7 @@
   display: block;
 }
 
-.preview__item_type {
+.preview__itemType {
   color: var(--black);
   text-align: center;
   font-family: Roboto;

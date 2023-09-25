@@ -1,3 +1,26 @@
-.header__container {
-  width: 1110px;
+.header__title {
+  color: var(--black);
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__topNav {
+  display: inline-block;
+}
+.header__topNavListItem {
+  display: inline-block;
+}
+
+.header__navList {
+  padding-left: 0;
+}
+.header__navListItem {
+  display: inline-block;
 }

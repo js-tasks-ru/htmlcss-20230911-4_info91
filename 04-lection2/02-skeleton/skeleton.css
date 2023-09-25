@@ -1,6 +1,5 @@
 .skeleton {
-  border: 1px solid var(--grey-3, ACB5BD);
-  fill: var(--white, white);
+  border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 24px 24px 32px 24px;
 }
@@ -8,30 +7,29 @@
 .skeleton__line {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  gap: 16px;
 }
 
-.skeleton__line div:nth-child(2) {
+.skeleton__line + .skeleton__line {
+  margin-top: 16px;
+}
+.skeleton__line + .skeleton__group {
+  margin-top: 16px;
+}
+
+.skeleton__group {
   flex-grow: 1;
-}
-
-.skeleton__line div:nth-child(2) div:nth-child(1) {
-  width: 40%;
-}
-.skeleton__line div:nth-child(2) div:nth-child(2) {
-  width: 70%;
 }
 
 .skeleton__circle {
   width: 64px;
   height: 64px;
   border-radius: 32px;
-
-  background-color: var(--grey-2, #dde2e5);
-  margin: 8px;
+  background-color: var(--grey-2);
 }
 .skeleton__bar {
   min-height: 20px;
+
   background: linear-gradient(
     93deg,
     #dde2e5 6.44%,
@@ -40,5 +38,21 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
-  margin: 8px;
+}
+
+.skeleton__bar + .skeleton__bar {
+  margin-top: 8px;
+}
+
+.skeleton_width25 {
+  width: 25%;
+}
+.skeleton_width50 {
+  width: 50%;
+}
+.skeleton_width75 {
+  width: 75%;
+}
+.skeleton_width100 {
+  width: 100%;
 }

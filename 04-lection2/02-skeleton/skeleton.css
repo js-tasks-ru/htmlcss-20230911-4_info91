@@ -44,15 +44,15 @@
   margin-top: 8px;
 }
 
-.skeleton_width25 {
+.skeleton__bar_small {
   width: 25%;
 }
-.skeleton_width50 {
+.skeleton__bar_medium {
   width: 50%;
 }
-.skeleton_width75 {
+.skeleton__bar_big {
   width: 75%;
 }
-.skeleton_width100 {
+.skeleton__bar_full {
   width: 100%;
 }

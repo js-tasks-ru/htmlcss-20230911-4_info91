@@ -1,0 +1,35 @@
+.aside {
+  background-color: var(--mainBackground);
+  padding-top: 60px;
+}
+
+.aside__header {
+  display: block;
+  color: var(--black);
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.aside__link {
+  display: block;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.aside__link:hover {
+  color: var(--notification);
+}
+
+.aside__link ~ .aside__header {
+  margin-top: 32px;
+}

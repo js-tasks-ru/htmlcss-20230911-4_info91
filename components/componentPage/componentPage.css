@@ -22,18 +22,22 @@
   margin-top: 60px;
 }
 
+.componentPage__header {
+  grid-area: header;
+}
+.componentPage__sidebar {
+  grid-area: sidebar;
+}
+
+.componentPage__footer {
+  grid-area: footer;
+}
+
 /* модификаторы */
 .componentPage_mainBackground {
   background-color: var(--mainBackground);
 }
 
-.componentPage_header {
-  grid-area: header;
-}
-.componentPage_sidebar {
-  grid-area: sidebar;
-}
-
-.componentPage_footer {
-  grid-area: footer;
+.componentPage_fullHeight {
+  height: 100%;
 }

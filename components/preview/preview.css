@@ -65,6 +65,10 @@
   width: 100%;
   margin: 0 25px 0 25px;
 }
+.preview__histogram_link {
+  text-decoration: solid;
+}
+
 .preview__calendar {
   width: 50%;
 }

@@ -62,7 +62,7 @@
       <main class="main page__main">
         <div class="container">
           <div class="preview">
-            <div class="preview__card">
+            <a href="/pages/tooltip/" class="preview__card">
               <div class="preview__item">
                 <div class="tooltip">
                   <svg
@@ -101,15 +101,15 @@
                 <span class="preview__itemCaption">Tooltip</span>
                 <span class="preview__itemType">Container</span>
               </div>
-            </div>
-            <div class="preview__card">
+            </a>
+            <a href="/pages/formElement/" class="preview__card">
               <div class="preview__item">ITEM</div>
               <div class="preview__details">
                 <span class="preview__itemCaption">Custom form elements</span>
                 <span class="preview__itemType">Element</span>
               </div>
-            </div>
-            <div class="preview__card">
+            </a>
+            <a href="/pages/calendar/" class="preview__card">
               <div class="preview__item">
                 <div class="calendar preview__calendar">
                   <p class="calendar__title">October 2019</p>
@@ -183,55 +183,41 @@
                 <span class="preview__itemCaption">Calendar</span>
                 <span class="preview__itemType">Container</span>
               </div>
-            </div>
-            <div class="preview__card">
+            </a>
+            <a href="/pages/modal/" class="preview__card">
               <div class="preview__item">ITEM</div>
               <div class="preview__details">
                 <span class="preview__itemCaption">Modal dialog</span>
                 <span class="preview__itemType">Container</span>
               </div>
-            </div>
-            <div class="preview__card">
+            </a>
+            <a href="/pages/histogram/" class="preview__card">
               <div class="preview__item">
                 <div class="histogram preview__histogram">
                   <div>
-                    <header class="histogram__header">
+                    <div class="histogram__header">
                       <p class="histogram__title">Total orders</p>
-                      <a href="#" class="histogram__link">View all</a>
-                    </header>
+                      <span class="histogram__link preview__histogram_link"
+                        >View all</span
+                      >
+                    </div>
                     <h4 class="histogram__count">50254</h4>
                   </div>
                   <div class="histogram__chart" id="previewHistogram"></div>
                 </div>
-                <script>
-                  window.onload = () => {
-                    const chart = document.querySelector('#previewHistogram');
-                    const bars = [100];
-                    for (let i = 0; i < 29; i++) {
-                      bars.push(Math.random() * 100);
-                    }
-                    const elements = bars.map((item) => {
-                      const el = document.createElement('div');
-                      el.className = 'histogram__bar';
-                      el.style.height = `${item}%`;
-                      return el;
-                    });
-                    chart.append(...elements);
-                  };
-                </script>
               </div>
               <div class="preview__details">
                 <span class="preview__itemCaption">Histogram</span>
                 <span class="preview__itemType">Element</span>
               </div>
-            </div>
-            <div class="preview__card">
+            </a>
+            <a href="/pages/avatar/" class="preview__card">
               <div class="preview__item">ITEM</div>
               <div class="preview__details">
                 <span class="preview__itemCaption">Avatar</span>
                 <span class="preview__itemType">Element</span>
               </div>
-            </div>
+            </a>
             <div class="preview__loadMore">
               <button class="button button_alternate">Load more</button>
             </div>
@@ -248,5 +234,21 @@
         </p>
       </footer>
     </div>
+    <script>
+      window.onload = () => {
+        const chart = document.querySelector('#previewHistogram');
+        const bars = [100];
+        for (let i = 0; i < 29; i++) {
+          bars.push(Math.random() * 100);
+        }
+        const elements = bars.map((item) => {
+          const el = document.createElement('div');
+          el.className = 'histogram__bar';
+          el.style.height = `${item}%`;
+          return el;
+        });
+        chart.append(...elements);
+      };
+    </script>
   </body>
 </html>

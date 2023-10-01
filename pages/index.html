@@ -6,6 +6,10 @@
     <title>Component page</title>
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="/components/navigation/navigation.css" />
+    <script
+      src="/components/navigation/script.js"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <div class="componentPage">
@@ -16,6 +20,7 @@
           >
             <svg
               class="header__menuToggle"
+              id="navigation__toggler"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -90,6 +95,12 @@
             </div>
           </header>
           <nav class="navigation componentPage__navigation">
+            <div class="navigation__divider"></div>
+            <div class="navigation__themeToggle">
+              <span class="navigation__themeToggleLable">Dark</span>
+              <button class="navigation__themeToggleButton">Button</button>
+            </div>
+            <div class="navigation__divider"></div>
             <h4 class="navigation__header">Elements</h4>
             <a class="navigation__link">Avatar</a
             ><a class="navigation__link">Custom form elements</a
@@ -97,6 +108,7 @@
             ><a class="navigation__link">Avatar</a
             ><a class="navigation__link">Custom form elements</a
             ><a class="navigation__link">Button</a>
+            <div class="navigation__divider"></div>
             <h4 class="navigation__header">Containers</h4>
             <a class="navigation__link">Avatar</a
             ><a class="navigation__link">Custom form elements</a
@@ -105,6 +117,7 @@
             ><a class="navigation__link">Custom form elements</a
             ><a class="navigation__link">Button</a>
             <h4 class="navigation__header">Templates</h4>
+            <div class="navigation__divider"></div>
             <a class="navigation__link">Avatar</a
             ><a class="navigation__link">Custom form elements</a
             ><a class="navigation__link">Button</a

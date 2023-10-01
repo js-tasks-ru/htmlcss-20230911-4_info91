@@ -5,6 +5,7 @@
 
 .tooltip__datails {
   display: none;
+  min-width: 129px;
 
   color: var(--white);
   text-align: center;

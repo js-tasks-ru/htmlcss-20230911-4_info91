@@ -50,3 +50,21 @@
   display: block;
   margin-top: 6px;
 }
+.preview__loadMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.preview__toolTip {
+  display: block;
+}
+
+.preview__histogram {
+  width: 100%;
+  margin: 0 25px 0 25px;
+}
+.preview__calendar {
+  width: 50%;
+}

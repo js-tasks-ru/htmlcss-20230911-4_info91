@@ -44,3 +44,24 @@
 .header__topNavItem ~ .header__topNavItem {
   margin-left: 24px;
 }
+.header__menuToggle {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menuToggle {
+    display: block;
+  }
+  .header__topMenu {
+    display: none;
+  }
+  .header__top {
+    justify-content: center;
+  }
+  .header {
+    padding-top: 16px;
+  }
+}

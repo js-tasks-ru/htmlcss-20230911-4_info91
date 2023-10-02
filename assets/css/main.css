@@ -1,5 +1,16 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
+
+/* library components */
+@import '/03-lection1/01-button/button.css';
+@import '/03-lection1/02-accordion/accordion.css';
+@import '/04-lection2/01-histogram/histogram.css';
+@import '/04-lection2/02-skeleton/skeleton.css';
+@import '/05-lection3/01-tooltip/tooltip.css';
+@import '/05-lection3/02-modal/modal.css';
+@import '/05-lection3/03-calendar/calendar.css';
+
+/* helper components */
 @import '/components/header/header.css';
 @import '/components/main/main.css';
 @import '/components/aside/aside.css';
@@ -8,7 +19,7 @@
 @import '/components/componentPage/componentPage.css';
 @import '/components/container/container.css';
 @import '/components/preview/preview.css';
-@import '/03-lection1/01-button/button.css';
+@import '/components/navigation/navigation.css';
 
 :root {
   --white: #ffffff;

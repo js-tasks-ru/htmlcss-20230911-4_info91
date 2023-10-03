@@ -46,7 +46,7 @@
   font-weight: 400;
   line-height: 20px;
 }
-
+/* модификаторы */
 .calendar__cell_header {
   color: var(--calendarCellHeader);
   font-family: Inter;
@@ -59,4 +59,9 @@
 }
 .calendar__cell_range {
   background: var(--calendarCellRange);
+}
+
+
+.calendar_preview {
+  width: 50%;
 }

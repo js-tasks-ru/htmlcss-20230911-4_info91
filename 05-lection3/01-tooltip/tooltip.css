@@ -34,3 +34,9 @@
 .tooltip__icon:hover ~ .tooltip__datails {
   display: block;
 }
+
+
+/* модификаторы */
+.tooltip_preview {
+  display: block;
+}

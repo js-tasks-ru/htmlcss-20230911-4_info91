@@ -5,6 +5,7 @@
 
 .tooltip__datails {
   display: none;
+  min-width: 129px;
 
   color: var(--white);
   text-align: center;
@@ -31,5 +32,11 @@
 }
 
 .tooltip__icon:hover ~ .tooltip__datails {
+  display: block;
+}
+
+
+/* модификаторы */
+.tooltip_preview {
   display: block;
 }

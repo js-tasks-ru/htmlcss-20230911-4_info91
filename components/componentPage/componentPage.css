@@ -23,6 +23,7 @@
 
 .componentPage__header {
   grid-area: header;
+  background-color: var(--mainBackground);
   margin-bottom: 60px;
 }
 .componentPage__navigation {
@@ -31,14 +32,10 @@
 
 .componentPage__footer {
   grid-area: footer;
-}
-
-/* модификаторы */
-.componentPage_mainBackground {
   background-color: var(--mainBackground);
 }
 
-.componentPage_fullHeight {
+.componentPage__container {
   height: 100%;
 }
 @media screen and (max-width: 768px) {

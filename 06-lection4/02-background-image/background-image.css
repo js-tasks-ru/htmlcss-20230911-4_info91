@@ -4,12 +4,12 @@
   background-image: url('./public/forest_400.jpg');
 }
 
-@media screen and (min-width: 401px) and (max-width: 768px) {
+@media screen and (min-width: 401px) {
   .body {
     background-image: url('./public/forest_768.jpg');
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .body {
     background-image: url('./public/forest_1024.jpg');
   }

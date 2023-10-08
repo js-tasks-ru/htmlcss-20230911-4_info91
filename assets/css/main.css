@@ -19,6 +19,7 @@
 @import '/components/componentPage/componentPage.css';
 @import '/components/container/container.css';
 @import '/components/preview/preview.css';
+@import '/components/tabs/tabs.css';
 
 :root {
   --white: #ffffff;

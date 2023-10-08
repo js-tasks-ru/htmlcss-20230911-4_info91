@@ -18,7 +18,7 @@
   opacity: 0;
   left: -200px;
 }
-.checkbox__label {
+.checkbox {
   display: inline-flex;
   align-items: center;
   gap: 12px;

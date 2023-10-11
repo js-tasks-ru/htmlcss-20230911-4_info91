@@ -24,6 +24,8 @@
   border-radius: 8px;
 
   padding: 17px 24px 13px 24px;
+
+  transition: border 500ms linear;
 }
 .inputText__fieldWrapper {
   position: relative;
@@ -49,7 +51,7 @@
 
 /* :focus */
 .inputText__field:focus {
-  border-color: var(--success);
+  border: 1px solid var(--success);
 }
 
 /* модификаторы */

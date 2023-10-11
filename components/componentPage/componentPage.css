@@ -12,22 +12,22 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header header'
-    'sidebar main'
+    'navigation main'
     'footer footer';
 }
 
 .componentPage__main {
   grid-area: main;
   background-color: var(--white);
-  margin-top: 60px;
 }
 
 .componentPage__header {
   grid-area: header;
   background-color: var(--mainBackground);
+  margin-bottom: 60px;
 }
-.componentPage__sidebar {
-  grid-area: sidebar;
+.componentPage__navigation {
+  grid-area: navigation;
 }
 
 .componentPage__footer {
@@ -37,4 +37,18 @@
 
 .componentPage__container {
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .componentPage__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+  }
+
+  .componentPage__header {
+    margin-bottom: 16px;
+  }
 }

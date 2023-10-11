@@ -12,67 +12,70 @@
       }
     </style>
     <div>
-      <label class="inputText"
-        >Lable:
-        <input class="inputText__field" type="text" placeholder="Placeholder" />
-      </label>
-      <label class="inputText"
-        >Focus:
-        <div class="inputText__fieldWrapper">
-          <input
-            class="inputText__field"
-            type="text"
-            placeholder="Placeholder"
-            value="Filled text"
-          />
-        </div>
-      </label>
-      <label class="inputText inputText_success"
-        >Success:
-        <div class="inputText__fieldWrapper">
-          <input
-            class="inputText__field"
-            type="text"
-            placeholder="Placeholder"
-            value="Success"
-          />
-        </div>
-      </label>
-      <label class="inputText inputText_invalid"
-        >Error:
-        <div class="inputText__fieldWrapper">
-          <input
-            class="inputText__field"
-            type="text"
-            placeholder="Placeholder"
-            value="Error"
-          />
-        </div>
-      </label>
-      <label class="inputText inputText_success"
+      <label class="inputText__label" for="input1">Lable: </label>
+      <div class="inputText__fieldWrapper">
+        <input
+          class="inputText__field"
+          id="input1"
+          type="text"
+          placeholder="Placeholder"
+        />
+      </div>
+
+      <label class="inputText" for="input2">Focus: </label>
+      <div class="inputText__fieldWrapper">
+        <input
+          id="input2"
+          class="inputText__field"
+          type="text"
+          placeholder="Placeholder"
+          value="Filled text"
+        />
+      </div>
+      <label class="inputText inputText_success" for="input3">Success: </label>
+      <div class="inputText__fieldWrapper">
+        <input
+          id="input3"
+          class="inputText__field"
+          type="text"
+          placeholder="Placeholder"
+          value="Success"
+        />
+      </div>
+      <label class="inputText inputText_invalid" for="input4">Error: </label>
+      <div class="inputText__fieldWrapper">
+        <input
+          id="input4"
+          class="inputText__field"
+          type="text"
+          placeholder="Placeholder"
+          value="Error"
+        />
+      </div>
+      <label class="inputText inputText_success" for="input6"
         >Success disabled:
-        <div class="inputText__fieldWrapper">
-          <input
-            class="inputText__field"
-            type="text"
-            placeholder="Placeholder"
-            value="Success disabled"
-            disabled
-          />
-        </div>
       </label>
-      <label class="inputText inputText_invalid"
-        >Error disabled:
-        <div class="inputText__fieldWrapper">
-          <input
-            class="inputText__field"
-            type="text"
-            placeholder="Placeholder"
-            value="Error disabled"
-            disabled
-          />
-        </div>
-      </label>
+      <div class="inputText__fieldWrapper">
+        <input
+          id="input5"
+          class="inputText__field"
+          type="text"
+          placeholder="Placeholder"
+          value="Success disabled"
+          disabled
+        />
+      </div>
+      <label class="inputText inputText_invalid">Error disabled: </label>
+      <div class="inputText__fieldWrapper" for="input6">
+        <input
+          id="input6"
+          class="inputText__field"
+          type="text"
+          placeholder="Placeholder"
+          value="Error disabled"
+          disabled
+        />
+      </div>
     </div>
   </body>
 </html>

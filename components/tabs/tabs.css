@@ -1,0 +1,48 @@
+.tabs__scroller {
+  background: var(--white);
+  margin-bottom: 68px;
+}
+.tabs__radio {
+  position: absolute;
+  opacity: 0;
+  left: -100vw;
+}
+.tabs__labelWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.tabs__label {
+  color: var(--black);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  padding-bottom: 8px;
+  border-bottom: 5px solid var(--white);
+}
+
+#all-tab:checked ~ * .tabs_allTabsLine {
+  border-bottom: 5px solid var(--black);
+}
+#complex-tab:checked ~ * .tabs_complexTabLine {
+  border-bottom: 5px solid var(--black);
+}
+#simple-tab:checked ~ * .tabs_simpleTabLine {
+  border-bottom: 5px solid var(--black);
+}
+
+#complex-tab:checked ~ * .tabs__content_complex {
+  display: inherit;
+}
+#complex-tab:checked ~ * .tabs__content_simple {
+  display: none;
+}
+#simple-tab:checked ~ * .tabs__content_simple {
+  display: inherit;
+}
+#simple-tab:checked ~ * .tabs__content_complex {
+  display: none;
+}

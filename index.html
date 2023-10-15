@@ -31,7 +31,18 @@
                 <a link="" class="header__topNavItem">About</a>
                 <a link="" class="header__topNavItem">Contacts</a>
               </nav>
-              <button class="header__topToggleButton">ThemeToggle</button>
+              <label class="toggler header__topToggleButton">
+                <svg fill="none" width="24" height="24">
+                  <use href="/assets/images/svg-sprites.svg#sun" />
+                </svg>
+                <input class="toggler__input" type="checkbox" />
+                <div class="toggler__base">
+                  <div class="toggler__switch"></div>
+                </div>
+                <svg fill="none" width="24" height="24">
+                  <use href="/assets/images/svg-sprites.svg#moon" />
+                </svg>
+              </label>
             </div>
           </div>
           <h1 class="header__title">Reusable component library</h1>

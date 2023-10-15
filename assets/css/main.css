@@ -31,6 +31,7 @@
 @import '/components/container/container.css';
 @import '/components/preview/preview.css';
 @import '/components/navigation/navigation.css';
+@import '/components/tabs/tabs.css';
 
 :root {
   --white: #ffffff;

@@ -4,9 +4,11 @@
 }
 
 .tooltip__datails {
-  display: none;
-  min-width: 129px;
+  opacity: 0;
+  position: absolute;
+  left: (-100vw);
 
+  min-width: 129px;
   color: var(--white);
   text-align: center;
   font-family: Inter;
@@ -15,10 +17,10 @@
   background: var(--primary);
   padding: 20px;
   border-radius: 8px;
-  position: absolute;
   top: -10px;
   left: 50%;
   transform: translateY(-100%) translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .tooltip__datails::after {
@@ -32,9 +34,9 @@
 }
 
 .tooltip__icon:hover ~ .tooltip__datails {
-  display: block;
+  opacity: 1;
+  left: 50%;
 }
-
 
 /* модификаторы */
 .tooltip_preview {

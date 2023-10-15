@@ -1,15 +1,13 @@
 window.addEventListener('load', () => {
-  const html = document.getElementsByTagName('body')[0];
-  const themeToggler = document.querySelectorAll('.theme');
-  console.log('theme', html);
+  const html = document.querySelector('html');
+  const themeToggler = document.querySelectorAll('[data-theme-toggler]');
   themeToggler.forEach((item) => {
-    console.log('item', item);
-    item.addEventListener('click', () => {
-      //   if (html.hasAttribute('data-theme')) {
-      //     html.removeAttribute('data-theme');
-      //   } else {
-      item.addAttribute('data-theme', 'dark');
-      //   }
+    item.addEventListener('mousedown', () => {
+      if (html.hasAttribute('data-theme')) {
+        html.removeAttribute('data-theme');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+      }
     });
   });
 });

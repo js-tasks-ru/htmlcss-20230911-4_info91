@@ -59,6 +59,9 @@
   --calendarCellRange: #a0b1f5;
 
   --notification: #d84910;
+
+  --fontColor: var(--black);
+  --backgroundColor: var(--white);
 }
 
 body {
@@ -73,4 +76,43 @@ body {
 
 h1 {
   font-size: 2.5rem;
+}
+
+html[data-theme] {
+  --white: #212429;
+  --black: #ffffff;
+  --grey-4: #f8f9fa;
+  --grey-3: #dde2e5;
+  --grey-2: #acb5bd;
+  --grey-1: #495057;
+  --alternateHover: var(--black);
+
+  --mainBackground: var(--grey-1);
+  --fontColor: rgb(124 125 128);
+
+  --notification: var(--pink);
+  /* edited */
+
+  /* --pink: #f784ad;
+  --purple: #7048e8;
+  --blue: #4263eb;
+  --red: #f03d3e;
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --primary: var(--blue);
+  --secondary: var(--purple);
+  --alternate: var(--grey-4);
+  --primaryHover: #2342c0;
+  --secondaryHover: #5028c6;
+
+  --cardBoxShadow: rgba(33, 36, 41, 0.05);
+
+  --modalTitle: #334d6e;
+  --calendarCellHeader: #90a0b7;
+  --calendarText: #334d6e;
+  --calendarCellRange: #a0b1f5;
+
+  --notification: #d84910; */
 }

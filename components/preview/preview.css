@@ -21,6 +21,7 @@
 }
 
 .preview__item {
+  color: var(--black, #212429);
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -58,4 +59,9 @@
   margin-top: 34px;
 }
 
-
+.header__topThemeIconLight {
+  color: var(--grey-4);
+}
+.header__topThemeIconDark {
+  color: var(--grey-3);
+}

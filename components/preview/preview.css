@@ -58,4 +58,14 @@
   margin-top: 34px;
 }
 
+.preview__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
 
+.preview_twoColumns {
+  gap: 37px;
+}

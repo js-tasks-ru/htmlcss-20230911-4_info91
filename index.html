@@ -117,7 +117,106 @@
                 href="/pages/formElement/"
                 class="preview__card tabs__content_simple"
               >
-                <div class="preview__item">ITEM</div>
+                <div class="preview__item preview_twoColumns">
+                  <div class="preview__column">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" />
+                      <div class="checkbox__squre">
+                        <svg
+                          class="checkbox__mark"
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__text">Default</span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" checked />
+                      <div class="checkbox__squre">
+                        <svg
+                          class="checkbox__mark"
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__text">Checked</span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" disabled />
+                      <div class="checkbox__squre">
+                        <svg
+                          class="checkbox__mark"
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__text">Disabled</span>
+                    </label>
+                  </div>
+                  <div class="preview__column">
+                    <label class="radio">
+                      <input class="radio__input" type="radio" name="name1" />
+                      <div class="radio__round">
+                        <div class="radio__mark"></div>
+                      </div>
+                      <span class="radio__text">Default</span>
+                    </label>
+
+                    <label class="radio">
+                      <input
+                        class="radio__input"
+                        type="radio"
+                        checked
+                        name="name1"
+                      />
+                      <div class="radio__round">
+                        <div class="radio__mark"></div>
+                      </div>
+                      <span class="radio__text">Selected</span>
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input" type="radio" disabled />
+                      <div class="radio__round">
+                        <div class="radio__mark"></div>
+                      </div>
+                      <span class="radio__text">Disabled</span>
+                    </label>
+                  </div>
+                </div>
                 <div class="preview__details">
                   <span class="preview__itemCaption">Custom form elements</span>
                   <span class="preview__itemType">Element</span>
@@ -217,7 +316,15 @@
                 href="/pages/modal/"
                 class="preview__card tabs__content_complex"
               >
-                <div class="preview__item">ITEM</div>
+                <div class="preview__item">
+                  <div class="modal modal_preview" id="modal" data-open>
+                    <div class="modal__container">
+                      <button class="button button_primary" type="submit">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
                 <div class="preview__details">
                   <span class="preview__itemCaption">Modal dialog</span>
                   <span class="preview__itemType">Container</span>

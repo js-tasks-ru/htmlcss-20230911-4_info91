@@ -26,6 +26,7 @@
   background-color: var(--mainBackground);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
+  transition: background-color 0.3s ease-out;
 }
 
 .toggler__switch {
@@ -36,6 +37,9 @@
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 50%;
+  transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out, linear;
 }
 
 /* :focus */
@@ -50,7 +54,8 @@
 }
 .toggler__input:checked ~ .toggler__base .toggler__switch {
   background-color: var(--white);
-  left: 26px;
+  /* left: 26px; */
+  transform: translateX(26px);
 }
 
 /* :disabled */

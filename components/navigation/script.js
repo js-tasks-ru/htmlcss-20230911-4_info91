@@ -1,14 +1,15 @@
 window.addEventListener('load', () => {
-  const button = document.getElementById('navigation__toggler');
-  const navigation = document.querySelector('.navigation');
-  console.log(button);
-  button.addEventListener('click', () => {
-    if (navigation.style.display === 'block') {
-      navigation.style.display = 'none';
-      document.body.overflow = 'initial';
-    } else {
-      navigation.style.display = 'block';
-      document.body.overflow = 'hidden';
-    }
+  const open = document.getElementById('navigationOpen');
+  const close = document.getElementById('navigationClose');
+  const navigation = document.getElementById('navigation');
+  open.addEventListener('click', () => {
+    navigation.setAttribute('data-open', 'true');
+    close.style.visibility = 'visible';
+    open.style.visibility = 'hidden';
+  });
+  close.addEventListener('click', () => {
+    navigation.removeAttribute('data-open');
+    open.style.visibility = 'visible';
+    close.style.visibility = 'hidden';
   });
 });

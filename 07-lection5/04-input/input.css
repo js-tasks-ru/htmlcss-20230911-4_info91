@@ -1,3 +1,7 @@
+.inputText {
+  display: inline-flex;
+  flex-direction: column;
+}
 .inputText__label {
   color: var(--grey-3);
 

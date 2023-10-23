@@ -1,8 +1,9 @@
 .header {
   padding-top: 24px;
+  background-color: var(--backgroundColor);
 }
 .header__title {
-  color: var(--black);
+  color: var(--fontColor);
   font-family: Inter;
   font-size: 50px;
   font-style: normal;
@@ -16,6 +17,7 @@
 }
 
 .header__logo {
+  color: var(--black);
   display: flex;
   gap: 8px;
 }
@@ -39,7 +41,7 @@
   line-height: 24px;
 }
 .header__topNavItem_active {
-  color: var(--black);
+  color: var(--fontColor);
 }
 .header__topNavItem ~ .header__topNavItem {
   margin-left: 24px;
@@ -61,7 +63,7 @@
   line-height: 24px;
 }
 .header__navItem_active {
-  color: var(--black);
+  color: var(--fontColor);
 }
 .header__navItem ~ .header__navItem {
   margin-left: 24px;

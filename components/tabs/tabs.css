@@ -1,5 +1,5 @@
 .tabs__scroller {
-  background: var(--white);
+  background: var(--backgroundColor);
   margin-bottom: 68px;
 }
 .tabs__radio {
@@ -13,7 +13,7 @@
 }
 
 .tabs__label {
-  color: var(--black);
+  color: var(--fontColor);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -25,13 +25,13 @@
 }
 
 #all-tab:checked ~ * .tabs_allTabsLine {
-  border-bottom: 5px solid var(--black);
+  border-bottom: 5px solid var(--fontColor);
 }
 #complex-tab:checked ~ * .tabs_complexTabLine {
-  border-bottom: 5px solid var(--black);
+  border-bottom: 5px solid var(--fontColor);
 }
 #simple-tab:checked ~ * .tabs_simpleTabLine {
-  border-bottom: 5px solid var(--black);
+  border-bottom: 5px solid var(--fontColor);
 }
 
 #complex-tab:checked ~ * .tabs__content_complex {

@@ -9,7 +9,7 @@
   width: 350px;
   height: 367px;
   border-radius: 12px;
-  background: var(--white);
+  background: var(--backgroundColor);
   box-shadow: 0px 2px 4px 0px var(--cardBoxShadow);
 
   display: flex;
@@ -21,6 +21,7 @@
 }
 
 .preview__item {
+  color: var(--black, #212429);
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -28,7 +29,7 @@
 }
 
 .preview__itemCaption {
-  color: var(--black);
+  color: var(--fontColor);
   text-align: center;
   font-family: Roboto;
   font-size: 21px;
@@ -40,7 +41,7 @@
 }
 
 .preview__itemType {
-  color: var(--black);
+  color: var(--fontColor);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -52,6 +53,7 @@
   margin-top: 6px;
 }
 .preview__loadMore {
+  color: var(--fontColor);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,4 +70,10 @@
 
 .preview_twoColumns {
   gap: 37px;
+}
+.header__topThemeIconLight {
+  color: var(--grey-4);
+}
+.header__topThemeIconDark {
+  color: var(--grey-3);
 }

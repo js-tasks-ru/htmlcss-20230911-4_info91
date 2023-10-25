@@ -60,9 +60,14 @@
   margin-top: 34px;
 }
 
-.header__topThemeIconLight {
-  color: var(--grey-4);
+.preview__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
 }
-.header__topThemeIconDark {
-  color: var(--grey-3);
+
+.preview_twoColumns .preview__item {
+  gap: 37px;
 }

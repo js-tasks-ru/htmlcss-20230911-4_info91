@@ -89,3 +89,10 @@
     padding-top: 16px;
   }
 }
+
+.header__topThemeIconLight {
+  color: var(--grey-4);
+}
+.header__topThemeIconDark {
+  color: var(--grey-3);
+}

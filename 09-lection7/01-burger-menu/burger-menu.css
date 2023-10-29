@@ -1,0 +1,104 @@
+/* вместо бургер */
+
+.navigation {
+  background-color: var(--mainBackground);
+}
+
+.navigation__topic {
+  display: block;
+  color: var(--black);
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.navigation__link {
+  display: block;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.navigation__link:hover {
+  color: var(--notification);
+}
+
+.navigation__topic:not(:first-child),
+.navigation__divider:not(:first-child) {
+  margin-top: 32px;
+}
+
+.navigation__divider {
+  border: 0px solid var(--grey-2);
+  border-bottom-width: 1px;
+  display: none;
+}
+
+.navigation_open {
+  display: block;
+}
+
+.navigation__header {
+  display: none;
+}
+.navigation__themeTogglerWrapper {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    overflow: scroll;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 0 16px 43px 16px;
+    transform: translateX(-100vw);
+    transition: transform 0.25s linear;
+  }
+  .navigation[data-open] {
+    transform: translateX(0);
+  }
+  .navigation__divider {
+    display: block;
+  }
+
+  .navigation__topic:not(:first-child),
+  .navigation__divider:not(:first-child) {
+    margin-top: 24px;
+  }
+  .navigation__topic:not(:first-child) {
+    margin-top: 16px;
+  }
+  .navigation__link ~ .navigation__link {
+    margin-top: 16px;
+  }
+  .navigation__header {
+    display: inherit;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+  .navigation__themeTogglerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .navigation__themeName {
+    color: var(--grey-4);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

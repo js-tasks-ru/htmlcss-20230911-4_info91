@@ -57,3 +57,7 @@
   opacity: 0.5;
   pointer-events: none;
 }
+
+.button_preview {
+  margin-top: 15px;
+}

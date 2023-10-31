@@ -62,4 +62,10 @@
   position: relative;
   width: 284px;
   height: 222px;
+  background-color: var(--grey-3);
+}
+
+.modal_preview .modal__container {
+  padding: 15px;
+  transform: scale(0.7);
 }

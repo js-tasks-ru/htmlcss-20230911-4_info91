@@ -43,20 +43,20 @@
 }
 
 .navigation_open {
-  display: block;
+  display: flex;
 }
 
 .navigation__header {
   display: none;
 }
-.navigation__themeTogglerWrapper {
+.navigation__themeLine {
   display: none;
 }
 @media screen and (max-width: 768px) {
   .navigation {
-    overflow: scroll;
+    overflow-y: scroll;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -86,8 +86,9 @@
     display: inherit;
     align-self: center;
     margin-bottom: 16px;
+    background-color: var(--mainBackground);
   }
-  .navigation__themeTogglerWrapper {
+  .navigation__themeLine {
     display: flex;
     justify-content: space-between;
     align-items: center;

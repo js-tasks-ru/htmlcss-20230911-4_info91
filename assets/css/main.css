@@ -26,6 +26,7 @@
 @import '/components/preview/preview.css';
 @import '/components/navigation/navigation.css';
 @import '/components/tabs/tabs.css';
+@import '/components/themeToggler/themeToggler.css';
 
 :root {
   --white: #ffffff;

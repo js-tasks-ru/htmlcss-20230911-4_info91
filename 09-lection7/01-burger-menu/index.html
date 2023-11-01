@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component page</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <script src="./burger-menu.js" type="text/javascript"></script>
+    <script
+      src="/components/navigation/script.js"
+      type="text/javascript"
+    ></script>
+    <script src="/assets/js/index.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="componentPage">
@@ -63,7 +67,28 @@
                   <a link="" class="header__topNavItem">About</a>
                   <a link="" class="header__topNavItem">Contacts</a>
                 </nav>
-                <button class="header__topToggleButton">ThemeToggle</button>
+                <label class="toggler" data-theme-toggler>
+                  <svg
+                    fill="none"
+                    width="24"
+                    height="24"
+                    class="header__topThemeIconLight"
+                  >
+                    <use href="/assets/images/svg-sprites.svg#sun" />
+                  </svg>
+                  <input class="toggler__input" type="checkbox" />
+                  <div class="toggler__base">
+                    <div class="toggler__switch"></div>
+                  </div>
+                  <svg
+                    fill="none"
+                    width="20"
+                    height="20"
+                    class="header__topThemeIconDark"
+                  >
+                    <use href="/assets/images/svg-sprites.svg#moon" />
+                  </svg>
+                </label>
               </div>
             </div>
           </header>
@@ -127,9 +152,14 @@
               </div>
             </header>
             <div class="navigation__divider"></div>
-            <div class="navigation__themeTogglerWrapper">
+            <div class="navigation__themeLine">
               <span class="navigation__themeName">Dark mode</span>
-              <button>Toggler</button>
+              <label class="toggler" data-theme-toggler>
+                <input class="toggler__input" type="checkbox" />
+                <div class="toggler__base">
+                  <div class="toggler__switch"></div>
+                </div>
+              </label>
             </div>
             <div class="navigation__divider"></div>
             <h4 class="navigation__topic">Elements</h4>
